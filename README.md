@@ -21,5 +21,6 @@ This is done by producing a weighted average , where weights determine the level
 
 6. How to generate an output ?
 
+For this project I will be using a PID ( proportional-integral-derivative) controller where the output is limited to -255 to 255 ( this is the full range of PWM signal used to control the motors ).
 
 7. 
