@@ -1,4 +1,4 @@
-#include <PID_v1.h>
+#include <PID_v1.h> // comments for Nana Yaw ( Import this library)
 #include <Wire.h>
 
 #define Sample 100;
@@ -20,7 +20,7 @@ float offset_z_ACC , offset_y_ACC , offset_x_ACC , offset_x_GYR , offset_y_GYR ,
 #define INd A3  // Channel B direction 
 
 
-double Setpoint ; // will be the desired value
+double Setpoint ; // will be the desired value  ( <---- copy this ) 
 double Input; // photo sensor
 double Output ; //motor speed
 //PID parameters
@@ -99,7 +99,7 @@ void offset_Calc(void){
    
 }
 
-
+// motor code 
 void runMotors(int leftMotor_speed, int rightMotor_speed){
   // limit the speed value between -255 and 255 as the PWM value can only be between 0 and 255 - the negative is handled below
   leftMotor_speed = constrain(leftMotor_speed, -255, 255);
