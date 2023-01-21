@@ -1,5 +1,6 @@
 #include <PID_v1.h> // comments for Nana Yaw ( Import this library)
 #include <Wire.h>
+#include <math.h>
 
 #define Sample 100;
 #define Rad2Deg  180 / M_PI;
